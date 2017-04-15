@@ -1,4 +1,6 @@
 $brand-primary: #F1E200;
+$light-grey: #c0c0c0;
+
 html,
 body{
   font-family: 'Open Sans', sans-serif;
@@ -44,6 +46,9 @@ body{
     width: 25%;
     margin-left: 15px;
     margin-right: 15px;
+    img{
+      max-width: 10em;
+    }
     .lead{
       font-family: 'Montserrat', sans-serif;
       font-weight: 400;
@@ -92,7 +97,31 @@ body{
   }
 }
 .section-preworkout{
-  
+  padding: 2em;
+  .column-md{
+    width: 80%;
+    margin: 0 auto;
+  }
+  h2{
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    letter-spacing: 4px;
+  }
+  .column-1,
+  .column-3{
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 3em;
+  }
+  .column-2{
+    width: 50%;
+    display: inline-block;
+  }
+}
+.text-muted{
+  color: $light-grey;
 }
 a {
   color: #000;
@@ -122,4 +151,35 @@ a:hover{
 }
 .uppercase{
   text-transform: uppercase;
+}
+.img-fluid{
+  width: 100%;
+  height: auto;
+}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .section-primary{ 
+    padding: 10% 10% 30% 10%;
+      h1{
+      font-size:2em;
+    }
+  }
+  .section-cta .icon-3{
+    width: 100%;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
 }
