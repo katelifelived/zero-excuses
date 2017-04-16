@@ -7,6 +7,9 @@ body{
   font-family: 'Open Sans', sans-serif;
   margin: 0px;
 }
+section{
+  padding: 4em 0;
+}
 .section-primary{
   background:linear-gradient(0deg, rgba(88, 83, 83, 0.6), rgba(88, 83, 83, 0.6)), 
             url(../images/pexels-photo-126401-min.jpeg) ,
@@ -109,6 +112,13 @@ body{
     display: inline-block;
     margin-left: 3em;
     margin-right: 3em;
+  }
+  .btn-blog{
+    padding: 10px 20px;
+    font-size: 12px;
+    background: none;
+    border: solid 2px $light-grey;
+    color: $light-grey;
   }
 }
 .lead{
