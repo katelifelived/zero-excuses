@@ -119,6 +119,22 @@ section{
     background: none;
     border: solid 2px $light-grey;
     color: $light-grey;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    }
+  .btn-blog:hover{
+    padding: 10px 20px;
+    font-size: 12px;
+    background: #000;
+    border: solid 2px #000;
+    color: $light-grey;
+  }
+}
+.section-partners{
+  background: $brand-primary;
+  .logo{
+    max-width: 10em;
+    display: inline;
   }
 }
 .lead{
