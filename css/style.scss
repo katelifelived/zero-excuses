@@ -181,7 +181,7 @@ a:hover{
   text-transform: uppercase;
 }
 .img-fluid{
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 /* Large Devices, Wide Screens */
@@ -191,20 +191,52 @@ a:hover{
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .section-cta .cta{
+    width: 100%;
+  }
+  .section-cta form input {
+    width: 100%;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 5px;
+    padding: 10px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+  }  
   .section-primary{ 
     padding: 10% 10% 30% 10%;
       h1{
       font-size:2em;
     }
   }
+  .section-preworkout .column-2 {
+    width: 100%;
+    display: block;
+  }
+  .section-preworkout .column-1, 
+  .section-preworkout .column-3{
+    width: 100%;
+    display: block;
+    margin-bottom: 1em;
+  }
+
+  .section-blog .post {
+    width: inherit;
+    display: block;
+    margin: 4em 2em;
+  }
   .section-cta .icon-3{
     width: 100%;
   }
-}
-
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-
+  .section-preworkout .column-md{
+    width: 100%;
+  }
 }
 
 /* Extra Small Devices, Phones */ 
